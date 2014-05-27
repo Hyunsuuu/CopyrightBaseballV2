@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectModeActivity" >
+
+    <Button
+        android:id="@+id/BTN_SINGLE_MODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인 모드" />
+    
+    <Button
+        android:id="@+id/BTN_VS_MODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대결 모드" />
+</LinearLayout>

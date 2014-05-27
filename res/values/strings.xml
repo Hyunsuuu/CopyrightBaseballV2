@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CopyrightBaseballV2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_select_mode">SelectModeActivity</string>
+    <string name="title_activity_about_sites">AboutSitesActivity</string>
+    <string name="title_activity_about_study">AboutStudyActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_vs_game">VsGameActivity</string>
+
+</resources>

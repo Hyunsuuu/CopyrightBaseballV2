@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameActivity" >
+
+    <TextView
+        android:id="@+id/TV_SINGLE_QUESTION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="야호" />
+
+    <Button
+        android:id="@+id/BTN_SINGLE_O"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O" />
+
+    <Button
+        android:id="@+id/BTN_SINGLE_X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X" />
+
+    <ImageView
+        android:id="@+id/IMG_SINGLE_HOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/IMG_SINGLE_FIRST_BASE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/IMG_SINGLE_SECOND_BASE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/IMG_SINGLE_THIRD_BASE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

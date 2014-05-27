@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<Button
+	    android:id="@+id/BTN_START_GAME"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="게임하기" />
+	
+	<Button
+	    android:id="@+id/BTN_ABOUT_SITES"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="관련 사이트" />
+	
+	<Button
+	    android:id="@+id/BTN_STUDY"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="공부하기" />
+</LinearLayout>
