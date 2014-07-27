@@ -1,7 +1,9 @@
 package kr.applepi.copyrightbaseballv2.main;
 
 import kr.applepi.copyrightbaseballv2.R;
+import kr.applepi.copyrightbaseballv2.single.SingleAddTeamNameActivity;
 import kr.applepi.copyrightbaseballv2.single.SingleGameActivity;
+import kr.applepi.copyrightbaseballv2.vs.VsAddTeamActivity;
 import kr.applepi.copyrightbaseballv2.vs.VsGameActivity;
 import android.app.Activity;
 import android.content.Intent;
@@ -43,11 +45,11 @@ public class SelectModeActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.BTN_SINGLE_MODE:
 			startActivity(new Intent(SelectModeActivity.this,
-					SingleGameActivity.class));
+					SingleAddTeamNameActivity.class));
 			break;
 		case R.id.BTN_VS_MODE:
 			startActivity(new Intent(SelectModeActivity.this,
-					VsGameActivity.class));
+					VsAddTeamActivity.class));
 			break;
 		}
 	}

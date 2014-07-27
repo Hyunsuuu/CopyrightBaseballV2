@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VsAddTeamActivity" >
+
+    <EditText
+        android:id="@+id/ET_VS_1_NAME"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BTN_VS_1_HORSE1"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse1" />
+
+        <Button
+            android:id="@+id/BTN_VS_1_HORSE2"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse2" />
+
+        <Button
+            android:id="@+id/BTN_VS_1_HORSE3"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse3" />
+
+        <Button
+            android:id="@+id/BTN_VS_1_HORSE4"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse4" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ET_VS_2_NAME"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BTN_VS_2_HORSE1"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse1" />
+
+        <Button
+            android:id="@+id/BTN_VS_2_HORSE2"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse2" />
+
+        <Button
+            android:id="@+id/BTN_VS_2_HORSE3"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse3" />
+
+        <Button
+            android:id="@+id/BTN_VS_2_HORSE4"
+            android:layout_width="36dp"
+            android:layout_height="47dp"
+            android:background="@drawable/horse4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTN_VS_NAME_CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인" />
+
+</LinearLayout>
