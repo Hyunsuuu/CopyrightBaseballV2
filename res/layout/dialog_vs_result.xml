@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_vs_result"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="136"
+        android:src="@drawable/copy_result2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="166"
+        android:background="@drawable/copy_result1_win"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_vs_team1"
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="108"
+        android:gravity="center"
+        android:background="@drawable/copy_result1_lose" >
+        
+        <TextView
+            android:id="@+id/tv_vs_team2"
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="159"
+        android:background="@drawable/copy_result2_button"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_vs_main"
+                android:layout_width="121dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backmain" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_vs_replay"
+                android:layout_width="121dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/replay" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

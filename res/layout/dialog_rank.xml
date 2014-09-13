@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_rank"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="136"
+        android:src="@drawable/copy_rank" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="111"
+        android:background="@drawable/copy_rank_1"
+        android:gravity="center"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/tv_team_name_1"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team_score_1"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="120dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="93"
+        android:background="@drawable/copy_rank_2"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_team_name_2"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team_score_2"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="120dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="137"
+        android:background="@drawable/copy_rank_3"
+        android:gravity="center"
+        android:paddingBottom="22dp" >
+
+        <TextView
+            android:id="@+id/tv_team_name_3"
+            android:layout_width="100dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_team_score_3"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="120dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -2,85 +2,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/copy_info_background"
     android:orientation="vertical"
     tools:context=".VsAddTeamActivity" >
-
-    <EditText
-        android:id="@+id/ET_VS_1_NAME"
-        android:layout_width="250dp"
+    
+    <ImageView 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/copy_mode_title"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/BTN_VS_1_HORSE1"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A팀의 이름을 입력해주세요"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/BTN_VS_1_HORSE2"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse2" />
+        <EditText
+            android:id="@+id/ET_VS_1_NAME"
+            android:layout_width="250dp"
+            android:layout_height="54.5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/copy_info_box"
+            android:singleLine="true" />
 
-        <Button
-            android:id="@+id/BTN_VS_1_HORSE3"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A팀의  말을 선택해주세요"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/BTN_VS_1_HORSE4"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse4" />
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/copy_infot_mal_select_"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/BTN_VS_1_HORSE1"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse1" />
+
+            <Button
+                android:id="@+id/BTN_VS_1_HORSE2"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse2" />
+
+            <Button
+                android:id="@+id/BTN_VS_1_HORSE3"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse3" />
+
+            <Button
+                android:id="@+id/BTN_VS_1_HORSE4"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:background="@drawable/horse4" />
+        </LinearLayout>
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/ET_VS_2_NAME"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:singleLine="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/BTN_VS_2_HORSE1"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B팀의 이름을 입력해주세요"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/BTN_VS_2_HORSE2"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse2" />
+        <EditText
+            android:id="@+id/ET_VS_2_NAME"
+            android:layout_width="250dp"
+            android:layout_height="54.5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/copy_info_box"
+            android:singleLine="true" />
 
-        <Button
-            android:id="@+id/BTN_VS_2_HORSE3"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B팀의  말을 선택해주세요"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/BTN_VS_2_HORSE4"
-            android:layout_width="36dp"
-            android:layout_height="47dp"
-            android:background="@drawable/horse4" />
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/copy_infot_mal_select_"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/BTN_VS_2_HORSE1"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse1" />
+
+            <Button
+                android:id="@+id/BTN_VS_2_HORSE2"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse2" />
+
+            <Button
+                android:id="@+id/BTN_VS_2_HORSE3"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/horse3" />
+
+            <Button
+                android:id="@+id/BTN_VS_2_HORSE4"
+                android:layout_width="36dp"
+                android:layout_height="47dp"
+                android:background="@drawable/horse4" />
+        </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/BTN_VS_NAME_CONFIRM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="확인" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/BTN_VS_NAME_CONFIRM"
+            android:layout_width="158.5dp"
+            android:layout_height="50.5dp"
+            android:background="@drawable/copy_info_start" />
+    </LinearLayout>
 
 </LinearLayout>

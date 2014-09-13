@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_single_high_score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="136"
+        android:src="@drawable/copy_highrank" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="179"
+        android:background="@drawable/copy_highrank_my"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_single_high_score"
+            android:layout_width="40dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="99"
+        android:background="@drawable/copy_play_button1" >
+
+        <Button
+            android:id="@+id/btn_single_confirm_high_score"
+            android:layout_width="262.5dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/copy_result_register" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="138"
+        android:background="@drawable/copy_play_button2"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_single_high_score_main"
+                android:layout_width="121dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/backmain" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_single_high_score_replay"
+                android:layout_width="121dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/replay" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

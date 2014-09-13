@@ -3,14 +3,15 @@ package kr.applepi.copyrightbaseballv2.vs;
 import kr.applepi.copyrightbaseballv2.R;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class VsAddTeamActivity extends Activity implements OnClickListener {
 
@@ -20,8 +21,11 @@ public class VsAddTeamActivity extends Activity implements OnClickListener {
 	Button[] btnTeam2Horse = new Button[4];
 
 	EditText etTeam1Name;
-	EditText etTema2Name;
+	EditText etTeam2Name;
 
+	String team1Name;
+	String team2Name;
+	
 	int tempTeam1Index = 0;
 	int tempTeam2Index = 0;
 
@@ -31,6 +35,8 @@ public class VsAddTeamActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_vs_add_team);
 
@@ -39,9 +45,9 @@ public class VsAddTeamActivity extends Activity implements OnClickListener {
 
 	void initUI() {
 		btnTeamNameConfirm = (Button) findViewById(R.id.BTN_VS_NAME_CONFIRM);
-
+		btnTeamNameConfirm.setOnClickListener(this);
 		etTeam1Name = (EditText) findViewById(R.id.ET_VS_1_NAME);
-		etTema2Name = (EditText) findViewById(R.id.ET_VS_2_NAME);
+		etTeam2Name = (EditText) findViewById(R.id.ET_VS_2_NAME);
 
 		int btnTeam1Id[] = new int[] { R.id.BTN_VS_1_HORSE1,
 				R.id.BTN_VS_1_HORSE2, R.id.BTN_VS_1_HORSE3,
@@ -90,12 +96,22 @@ public class VsAddTeamActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.BTN_VS_NAME_CONFIRM:
-			Intent mIntent = new Intent(VsAddTeamActivity.this,
-					VsGameActivity.class);
-			mIntent.putExtra("team1HorseIndex", tempTeam1Index);
-			mIntent.putExtra("team2HorseIndex", tempTeam2Index);
-			startActivity(mIntent);
-			finish();
+			team1Name = etTeam1Name.getText().toString();
+			team2Name = etTeam2Name.getText().toString();
+			if(team1Name.equals("") || team2Name.equals("")) {
+				Toast.makeText(VsAddTeamActivity.this, "공백을 채워주세요", 1000).show();
+			} else {
+				Intent mIntent = new Intent(VsAddTeamActivity.this,
+						VsGameActivity.class);
+				mIntent.putExtra("team1HorseIndex", tempTeam1Index);
+				mIntent.putExtra("team2HorseIndex", tempTeam2Index);
+				mIntent.putExtra("team1Name", team1Name);
+				mIntent.putExtra("team2Name", team2Name);
+				startActivity(mIntent);
+				finish();
+				
+			}
+			break;
 		case R.id.BTN_VS_1_HORSE1:
 			selectTeam1Horse(0);
 			break;
